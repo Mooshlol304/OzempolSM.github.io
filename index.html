@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozempol</title>
+    <link rel="icon" href="TranspLogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo {
+            width: 40px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 70px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd4d4;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ff4d4d, #ff8f8f);
+            color: #fff;
+        }
+
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        #hero .LogoContainer img {
+            width: 120px;
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 12px 30px;
+            color: #ff4d4d;
+            background: white;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta:hover {
+            background: #ffd4d4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card h3 {
+            margin-top: 0;
+            color: #ff4d4d;
+            font-size: 1.5em;
+        }
+
+        .blog-card a {
+            text-decoration: none;
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .blog-card a:hover {
+            color: #cc0000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="WhiteTransp.png" alt="Logo" class="nav-logo"> Ozempol
+            </div>
+            <ul class="nav-links">
+                <li><a href=Licenses.html>Licensing</a></li>
+                <li><a href=https://discord.gg/NeSryqjkRW>Support</a></li>
+                <li><a href=email.html>Email</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="LogoContainer">
+                <img src="WhiteTransp.png" alt="Logo">
+            </div>
+            <h1>Welcome to Ozempol</h1>
+            <p>A multipurpose upcoming company for multiple online related purposes.</p>
+            <a href="https://x.com/ozempol15526" class="cta">Our Twitter!</a>
+        </section>
+
+        <section id="latest" class="blog-section">
+            <h2>Recent Products</h2>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <h3>TEANDA</h3>
+                    <p>Read our nda for the early arcade, which protects your content against people who want to steal it! Keep it safe in our Hands!</p>
+                    <a href=TEANDA.md>Read</a>
+                </div>
+                <div class="blog-card">
+                    <h3>OZL</h3>
+                    <p>The Licenses every person needs, from devs to publishers and makes the most fair licenses available for free.</p>
+                    <a href=Licenses.html>Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="viral" class="blog-section">
+            <h2>Coming Soon</h2>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <h3>Coming Soon</h3>
+                    <p>Coming Soon</p>
+                    <a href=#Ozempol>Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Coming Soon</h3>
+                    <p>Coming Soon</p>
+                    <a href=#Ozempol>Coming Soon</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="more" class="blog-section">
+            <h2>Coming Soon</h2>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <h3>Coming Soon</h3>
+                    <p>soon</p>
+                    <a href=#Ozempol>Coming Soon</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ozempol. Your ultimate Licensing site.</p>
+    </footer>
+</body>
+</html>
